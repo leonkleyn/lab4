@@ -1,0 +1,119 @@
+body {
+	text-align: center;
+	/*background-color:#adadad;*/
+	background-image: linear-gradient(grey, white);
+}
+
+img {
+	margin-top: 20px;
+	border-radius: 15px;
+	border-style: outset;
+	border-color: #c3cbcc;
+	border-width: 3px;
+}
+
+h1 {
+	width:40%;
+	border-width:2px;
+	border-style:outset;
+	border-radius: 8px;
+	margin:auto;
+}
+
+
+#one {
+	width: 33.3%;
+	height: 70%;
+	float: left;
+}
+
+#two {
+	width: 33.3%;
+	height: 70%;
+	float: left;
+}
+
+#three {
+	width: 33.3%;
+	height: 70%;
+	float: left;
+}
+
+#userPassText {
+	width:30%;
+	height: 60%;
+	float:left;
+	background-color:white;	
+	border-radius:10px;
+	border-style: inset;
+	border-width: 3px;
+	text-align: center;
+}
+
+#cartMenu {
+	width:30%;
+	height: 60%;
+	float:left;
+	background-color:white;	
+	border-radius:10px;
+	border-style: inset;
+	border-width: 3px;
+	text-align: center;
+	margin-left: 16px;
+	margin-bottom:10px;
+
+}
+
+#shippingMenu {
+	width: 30%;
+	height: 60%;
+	float: right;
+	background-color:white;	
+	border-radius:10px;
+	border-style: inset;
+	border-width: 3px;
+	text-align: center;
+	margin-bottom:10px;
+
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .2} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .2} 
+	to {opacity: 1}
+}
+
+legend {
+	background-color: white;
+	border-radius: 5px;
+	width:35%;
+	border-style: outset;
+}
+
+#menuLegend {
+	background-color: white;
+	border-radius: 5px;
+	width:25%;
+	border-style: outset;
+}
+
+.loginBox {
+	background-color:white;	
+	border-radius:10px;
+	border-style: outset;
+	border-width: 3px;
+	text-align: center;
+	height: 30%;
+}

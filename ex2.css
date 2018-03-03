@@ -1,0 +1,14 @@
+body {
+	text-align: center;
+}
+
+legend {
+	color: white;
+	background-color: black;
+	width: 300px;
+}
+
+fieldset {
+	margin:auto;	
+	width:20%;
+}

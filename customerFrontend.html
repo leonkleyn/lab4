@@ -1,0 +1,62 @@
+
+<html>
+	<head>
+		<title>Lab 4 Ex. 3</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap.3.3.7/js/bootstrap.min.js"></script>
+		-->
+	</head>
+
+	<body>	
+		<div id="header">
+			<h1 align="center" class="header fade" style="font-size:44px" >Motorcycle Accessories</h1>
+		</div>
+		<div class="image fade" id="one">
+			<img src="https://crosshelmet.com/x1/wp/wp-content/uploads/2018/01/DSC_9039r-300x300.jpg" width="400px" height="400px">
+		</div>
+
+		<div class="image fade" id="two">
+			<img src="https://images-na.ssl-images-amazon.com/images/I/51CWFNgEd3L.jpg" width="400px" height="400px">
+		</div>
+
+		<div class="image fade" id="three">
+			<img src="https://www.revzilla.com/product_images/0268/1621/alpinestars_gp_plus_rv2_perforated_jacket_300x300.jpg" width="400px" height="400px">
+		</div>
+		<fieldset class='loginBox fade'>
+			<legend id="menuLegend"><b>Order Menu</b></legend>
+			<form action="customerBackend.php" method="post">
+				<fieldset id="userpassText" align="center">
+					<legend><b>Login Information</b></legend>
+					<br><label for="username">username (email): </label>
+					<input type="email" id="username" name="username"><br><br>
+					<label for="password">password: </label>
+					<input type="password" id="password" name="password" /><br><br>
+				</fieldset>
+				<fieldset id="cartMenu" align="center">
+					<legend><b>Add to Cart</b></legend>
+					<div id="itemList">
+						CrossHelmet X1:<input type="number" id="helmet" name="helmet" style="width: 40px;" min="0" max="20" value="0"/><br><br>
+						Armored Gloves:<input type="number" id="gloves" name="gloves" style="width: 40px;" min="0" max="20" value="0"/><br><br>
+						AlpineStars Jacket:<input type="number" id="jacket" name="jacket" style="width: 40px;" min="0" max="20" value="0"/><br>
+					</div>
+					<div id="submitMessage" style="display: none;">
+						Your items have been added to the cart. Please submit your order.
+					</div>
+				</fieldset>
+				<fieldset id="shippingMenu" align="center">
+					<legend><b>Shipping Options</b></legend>
+					<input type="radio" id="shipping1" name="shipping" value="0"/>Free 7-Day Shipping<br><br>
+					<input type="radio" id="shipping2" name="shipping" value="5"/>$5.00 3-Day Shipping<br><br>
+					<input type="radio" id="shipping3" name="shipping" value="50"/>$50.00 Overnight
+				</fieldset>
+				<br><button type="button" id="Validate" onclick="validate()">Add to Cart</button>
+				<input type="submit" id="Submit" value="Submit Order" style="display: none;"/><input type="reset" /><br>
+			</form>
+		</fieldset>
+	<script src="formChecker.js"></script>
+	</body>
+</html>
